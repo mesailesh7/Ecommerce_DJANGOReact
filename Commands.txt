@@ -92,3 +92,5 @@ python manage.py createsuperuser
 u: sun
 p: admin
 
+//to install cors in django
+pip install django-cors-headers
