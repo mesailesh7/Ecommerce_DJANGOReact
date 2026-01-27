@@ -1,0 +1,94 @@
+
+//To create a env
+python3 -m venv env
+//to switch to the environments
+source env/bin/activate
+
+Activate the virtual environment:
+Windows
+C:\Users\Your Name> myfirstproject\Scripts\activate
+
+macOS/Linux
+$ source myfirstproject/bin/activate
+
+//enerate the requirements.txt file: When all necessary packages are installed and the environment is active, run the following command to "freeze" the current state of the environment into a file named requirements.txt:
+pip freeze > requirements.txt
+
+//to install all the requiements dependencies
+install all requirements
+pip install -r requirement
+
+pip3 install django djangorestframework psycopg2-binary python-dotenv
+
+
+//to create a django project
+django-admin startproject backend
+
+cd backend
+//to create apps or application
+python manage.py startapp api
+
+
+//to create a django project but you don't want two backend folder
+django-admin startproject backend .
+
+---
+add api and rest_framework to installed apps
+
+create models.py, urls and serializers.py
+cd ..
+
+---
+npm create vite@latest frontend -- --template react
+npm install axios
+npm install react-router-dom
+npm install jwt-decode
+
+
+
+
+add:
+"proxy": "http://localhost:8000",
+to package.json
+
+
+
+
+
+
+
+
+
+
+Once apps has been installed in settings.py
+INSTALLED_APPS=[
+    'rest_framework',
+    'appsNames'
+]
+
+
+//nICE TO KNWO
+//in postgreq terminal
+//to create Users
+CREATE ROLE username WITH LOGIN PASSWORD 'password';
+//to change the ROLE
+ALTER ROLE username SUPERUSER CREATEDDB CREATEROLE;
+//to create database
+CREATE DATABASE databasename OWNER username;
+// to get list of database
+\l
+// to quit
+\q
+
+
+
+
+// To migrate database
+python manage.py migrate
+python manage.py makemigrations
+
+//to create SUPERUSER
+python manage.py createsuperuser
+u: sun
+p: admin
+
