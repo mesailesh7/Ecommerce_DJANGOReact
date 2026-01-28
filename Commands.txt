@@ -1,4 +1,3 @@
-
 //To create a env
 python3 -m venv env
 //to switch to the environments
