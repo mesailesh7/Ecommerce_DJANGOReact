@@ -88,7 +88,7 @@ const ProductDetails = () => {
                         {/* Home Button */}
                         <div className="mt-4">
                             <a
-                                href="/"
+                                href="/frontend/public"
                                 className="text-blue-600 hover:underline"
                             >
                                 &larr; Back to Home

@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import ProductList from "../pages/ProductList.jsx";
-import ProductDetails from "../pages/ProductDetails.jsx";
+import ProductList from "./pages/ProductList.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
 import React from 'react'
 
 
