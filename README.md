@@ -9,7 +9,7 @@ A full-stack E-commerce application built with **Django** (Backend) and **React*
 * **Backend:** Python, Django, Django REST Framework
 * **Frontend:** React.js, Axios
 * **Database:** SQLite (default) / PostgreSQL
-* **Styling:** React-Bootstrap / CSS
+* **Styling:** TailwindCSS
 
 ---
 
