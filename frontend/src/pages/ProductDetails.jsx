@@ -25,6 +25,7 @@
 
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+import {useCart} from "../context/CartContext.jsx";
 
 const ProductDetails = () => {
     const {id} = useParams();
@@ -32,6 +33,8 @@ const ProductDetails = () => {
     const [product, setProduct] = useState();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const {addToCart} = useCart();
 
     useEffect(() => {
         fetch(`${BASEURL}/api/products/${id}`)
@@ -82,6 +85,9 @@ const ProductDetails = () => {
                             {product.price}
                         </p>
                         <button
+                            onClick={() => {
+                                addToCart(product)
+                            }}
                             className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
                             Add to Cart 🛒
                         </button>
